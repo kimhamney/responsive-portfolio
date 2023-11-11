@@ -26,6 +26,29 @@ const linkAction = () => {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*=============== QR POPUP ===============*/
+const qrPopup = document.getElementById('qr-popup'),
+    qrButton = document.getElementById('qr-button')
+    qrClose = document.getElementById('qr-close')
+
+if (qrButton) {
+    qrButton.addEventListener('click', () => {
+        qrPopup.classList.add('show-qr')
+    })
+}
+
+if (qrClose) {
+    qrClose.addEventListener('click', () => {
+        qrPopup.classList.remove('show-qr')
+    })
+}
+
+if (qrPopup) {
+    qrPopup.addEventListener('click', () => {
+        qrPopup.classList.remove('show-qr')
+    })
+}
+
 /*=============== SHADOW HEADER ===============*/
 const shadowHeader = () => {
     const header = document.getElementById('header')

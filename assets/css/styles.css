@@ -37,6 +37,7 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+  --z-qr: 200;
 }
 
 /*========== Responsive typography ==========*/
@@ -390,6 +391,48 @@ body.dark-theme {
 
 .active-link::after {
   width: 25%;
+}
+
+.qr__container {
+  display: none;
+  position: fixed;
+  z-index: var(--z-qr);
+  margin: auto;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+}
+
+.qr__popup {
+  display: flex;
+  background-color: hsla(0, 0%, 0%, .75);
+  width: 400px;
+  backdrop-filter: blur(8px);
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+}
+
+.qr__close {  
+  display: flex;
+  position: fixed;
+  color: var(--white-color);
+  right: 1rem;
+  top: 1rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.qr__img {
+  width: 60%;
+  height: 60%;
+  margin: auto;
+}
+
+/* Show qr */
+.show-qr {
+  display: flex;
 }
 
 /*=============== HOME ===============*/
