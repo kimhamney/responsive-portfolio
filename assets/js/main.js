@@ -29,17 +29,10 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*=============== QR POPUP ===============*/
 const qrPopup = document.getElementById('qr-popup'),
     qrButton = document.getElementById('qr-button')
-    qrClose = document.getElementById('qr-close')
 
 if (qrButton) {
     qrButton.addEventListener('click', () => {
         qrPopup.classList.add('show-qr')
-    })
-}
-
-if (qrClose) {
-    qrClose.addEventListener('click', () => {
-        qrPopup.classList.remove('show-qr')
     })
 }
 
