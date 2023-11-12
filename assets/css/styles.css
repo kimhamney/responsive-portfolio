@@ -698,6 +698,14 @@ body.dark-theme {
 .projects__image {
   position: relative;
   margin-bottom: .75rem;
+  width:100%;
+  height:60%
+}
+
+.projects__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .projects__button {
