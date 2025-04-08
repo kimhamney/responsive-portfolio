@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hyeminkim.netlify.app/sitemap.xml
